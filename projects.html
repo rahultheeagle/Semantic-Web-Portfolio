@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects by RAHUL BASAK - Web Development Portfolio</title>
+    <meta name="description" content="Explore RAHUL BASAK's web development projects including e-commerce platforms, task management apps, and data visualization dashboards.">
+</head>
+<body itemscope itemtype="https://schema.org/CreativeWork">
+    <a href="#main-content">Skip to main content</a>
+    <header role="banner">
+        <h1>RAHUL BASAK</h1>
+        <nav role="navigation" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html" aria-current="page">Projects</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main" id="main-content">
+        <section>
+            <h2>My Projects</h2>
+            
+            <article itemscope itemtype="https://schema.org/SoftwareApplication" data-project-id="ecommerce-platform" data-status="completed">
+                <h3 itemprop="name">Enterprise E-Commerce Platform - RetailMax Solutions</h3>
+                <p itemprop="description">Comprehensive e-commerce solution serving 50,000+ active customers with real-time inventory management, multi-payment gateway integration, and advanced analytics dashboard. Processes over $2M in monthly transactions with 99.9% uptime.</p>
+                <p>Key features include automated inventory synchronization across multiple warehouses, dynamic pricing algorithms, personalized product recommendations using machine learning, and comprehensive admin panel for order management and customer analytics.</p>
+                
+                <details data-feature="project-demo">
+                    <summary>View Project Demo</summary>
+                    <iframe src="https://retailmax-demo.herokuapp.com" width="600" height="400" 
+                            title="RetailMax E-Commerce Platform Interactive Demo" 
+                            data-embed-type="demo"
+                            aria-describedby="demo-desc-1">
+                    </iframe>
+                    <p id="demo-desc-1">Interactive demo of the e-commerce platform showing product browsing, cart functionality, and checkout process.</p>
+                </details>
+                
+                <h4>Technologies Used:</h4>
+                <ul>
+                    <li>Frontend:
+                        <ul>
+                            <li>React 18</li>
+                            <li>Redux Toolkit</li>
+                            <li>Material-UI</li>
+                        </ul>
+                    </li>
+                    <li>Backend:
+                        <ul>
+                            <li>Node.js</li>
+                            <li>Express.js</li>
+                            <li>JWT Authentication</li>
+                        </ul>
+                    </li>
+                    <li>Database: MongoDB with Mongoose</li>
+                </ul>
+                
+                <h4>Code Sample:</h4>
+                <pre><code>const authenticateUser = async (req, res, next) => {
+  const token = req.header('Authorization');
+  if (!token) {
+    return res.status(401).json({ message: 'Access denied' });
+  }
+  try {
+    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+    req.user = decoded;
+    next();
+  } catch (error) {
+    res.status(400).json({ message: 'Invalid token' });
+  }
+};</code></pre>
+                
+                <p><a href="https://retailmax-demo.herokuapp.com">Explore the live e-commerce platform demonstration</a> | <a href="https://github.com/rahulbasak/retailmax-platform">Review source code and technical documentation on GitHub</a></p>
+            </article>
+
+            <article itemscope itemtype="https://schema.org/SoftwareApplication" data-project-id="task-management" data-status="completed">
+                <h3 itemprop="name">Collaborative Project Management Suite - TeamFlow</h3>
+                <p itemprop="description">Enterprise-grade project management application supporting 500+ concurrent users across distributed teams. Features advanced workflow automation, time tracking, resource allocation, and comprehensive reporting capabilities.</p>
+                <p>Built with real-time collaboration features including live document editing, video conferencing integration, automated progress tracking, and customizable dashboard views. Integrates with popular tools like Slack, GitHub, and Jira for seamless workflow management.</p>
+                
+                <details data-feature="progress-tracking">
+                    <summary>Development Progress</summary>
+                    <p>Frontend Development: <progress value="100" max="100">100%</progress></p>
+                    <p>Backend API: <progress value="100" max="100">100%</progress></p>
+                    <p>Testing Coverage: <progress value="95" max="100">95%</progress></p>
+                    <p>Documentation: <progress value="80" max="100">80%</progress></p>
+                </details>
+                
+                <h4>Technologies Used:</h4>
+                <ul>
+                    <li>Frontend: Vue.js 3, Vuex, Tailwind CSS</li>
+                    <li>Backend: Express.js, Socket.io</li>
+                    <li>Database: PostgreSQL</li>
+                    <li>Testing: Jest, Cypress</li>
+                </ul>
+                
+                <h4>Code Sample:</h4>
+                <pre><code>// Vue component for task drag and drop
+export default {
+  methods: {
+    onDrop(event, status) {
+      const taskId = event.dataTransfer.getData('taskId');
+      this.updateTaskStatus(taskId, status);
+      this.$socket.emit('taskMoved', { taskId, status });
+    }
+  }
+}</code></pre>
+                
+                <p><a href="https://teamflow-app.netlify.app">Experience the TeamFlow project management interface</a> | <a href="https://github.com/rahulbasak/teamflow-app">Access complete source code and API documentation</a></p>
+            </article>
+
+            <article itemscope itemtype="https://schema.org/SoftwareApplication" data-project-id="data-dashboard" data-status="completed">
+                <h3 itemprop="name">Real-Time Analytics Dashboard - DataInsight Pro</h3>
+                <p itemprop="description">Advanced business intelligence platform processing 10TB+ of data daily from multiple sources. Provides real-time insights, predictive analytics, and automated reporting for enterprise decision-making.</p>
+                <p>Developed for a Fortune 500 marketing agency managing $50M+ in advertising spend. Features include multi-channel campaign tracking, ROI optimization algorithms, custom KPI monitoring, and white-label reporting capabilities for client presentations.</p>
+                
+                <details data-feature="performance-metrics">
+                    <summary>Performance Metrics</summary>
+                    <p>Data Processing Speed: <meter value="0.85" min="0" max="1">85%</meter></p>
+                    <p>User Satisfaction: <meter value="0.92" min="0" max="1">92%</meter></p>
+                    <p>System Uptime: <meter value="0.998" min="0" max="1">99.8%</meter></p>
+                </details>
+                
+                <h4>Technologies Used:</h4>
+                <ul>
+                    <li>Frontend: D3.js, Chart.js</li>
+                    <li>Backend: Python Flask</li>
+                    <li>Data Processing: Pandas, NumPy</li>
+                    <li>Database: PostgreSQL, Redis</li>
+                </ul>
+                
+                <h4>Code Sample:</h4>
+                <pre><code>import pandas as pd
+from flask import jsonify
+
+@app.route('/api/analytics')
+def get_analytics():
+    df = pd.read_sql_query("SELECT * FROM campaigns", db.engine)
+    summary = df.groupby('channel').agg({
+        'clicks': 'sum',
+        'conversions': 'sum',
+        'cost': 'sum'
+    }).to_dict('records')
+    return jsonify(summary)</code></pre>
+                
+                <p><a href="https://datainsight-demo.vercel.app">Interact with the DataInsight Pro analytics interface</a> | <a href="https://github.com/rahulbasak/datainsight-dashboard">Examine the data processing architecture and visualization code</a></p>
+            </article>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <p>&copy; 2024 RAHUL BASAK. All rights reserved.</p>
+    </footer>
+</body>
+</html>

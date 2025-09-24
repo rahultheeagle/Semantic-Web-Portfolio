@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact RAHUL BASAK - Get In Touch</title>
+    <meta name="description" content="Contact RAHUL BASAK for web development projects, collaborations, or professional inquiries. Multiple ways to get in touch.">
+</head>
+<body itemscope itemtype="https://schema.org/ContactPage">
+    <a href="#main-content">Skip to main content</a>
+    <header role="banner">
+        <h1>RAHUL BASAK</h1>
+        <nav role="navigation" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main" id="main-content">
+        <section>
+            <h2>Let's Discuss Your Next Project</h2>
+            <p>I'm currently available for consulting engagements, technical leadership roles, and collaborative development projects. Whether you need architecture guidance, full-stack development expertise, or team mentorship, I'd love to explore how we can work together to achieve your technical goals.</p>
+            
+            <address itemprop="contactPoint" itemscope itemtype="https://schema.org/ContactPoint">
+                <p><strong>Email:</strong> <a href="mailto:rahul01102004@gmail.com" itemprop="email">rahul01102004@gmail.com</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+918436401882" itemprop="telephone">+91 84364 01882</a></p>
+                <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/rahul-basak-fullstack" itemprop="url">Connect with me on LinkedIn for professional networking</a></p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/rahulbasak-dev" itemprop="url">Explore my open-source contributions and project repositories</a></p>
+                <p><strong>Portfolio:</strong> <a href="https://rahulbasak-portfolio.dev" itemprop="url">View additional project case studies and technical articles</a></p>
+            </address>
+            
+            <details data-location="office">
+                <summary>Office Location</summary>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.123!2d-74.006!3d40.7128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQyJzQ2LjEiTiA3NMKwMDAnMjEuNiJX!5e0!3m2!1sen!2sus!4v1234567890" 
+                        width="400" height="300" 
+                        title="Office Location Map" 
+                        data-embed-type="map"
+                        aria-describedby="map-desc">
+                </iframe>
+                <p id="map-desc">Interactive map showing office location at 123 Tech Park, Sector V, Salt Lake City, Kolkata, West Bengal</p>
+            </details>
+        </section>
+
+        <section>
+            <h2>Contact Form</h2>
+            <form action="/contact" method="post" enctype="multipart/form-data" aria-describedby="form-instructions">
+                <p id="form-instructions">Fields marked with * are required. Please provide detailed information about your project requirements, timeline, and technical constraints to ensure I can offer the most relevant guidance and accurate project estimates.</p>
+                
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    
+                    <p>
+                        <label for="name">Full Name: <span aria-label="required">*</span></label><br>
+                        <input type="text" id="name" name="name" list="name-suggestions" required 
+                               pattern="[A-Za-z\s]{2,50}" 
+                               title="Please enter your full name (2-50 characters, letters and spaces only)"
+                               maxlength="50"
+                               aria-describedby="name-error">
+                        <datalist id="name-suggestions">
+                            <option value="John Smith">
+                            <option value="Jane Doe">
+                            <option value="Alex Johnson">
+                        </datalist>
+                        <span id="name-error" role="alert" aria-live="polite"></span>
+                    </p>
+                    
+                    <p>
+                        <label for="email">Email Address: <span aria-label="required">*</span></label><br>
+                        <input type="email" id="email" name="email" required 
+                               title="Please enter a valid email address"
+                               maxlength="100"
+                               aria-describedby="email-error">
+                        <span id="email-error" role="alert" aria-live="polite"></span>
+                    </p>
+                    
+                    <p>
+                        <label for="phone">Phone Number:</label><br>
+                        <input type="tel" id="phone" name="phone" 
+                               title="Please enter a valid phone number (10-15 digits)"
+                               maxlength="15"
+                               aria-describedby="phone-help">
+                        <span id="phone-help">Preferred format: +91 84364 01882 or 84364 01882</span>
+                    </p>
+                    
+                    <p>
+                        <label for="website">Website/Portfolio:</label><br>
+                        <input type="url" id="website" name="website" 
+                               title="Please enter a valid URL starting with http:// or https://"
+                               maxlength="200">
+                    </p>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Project Details</legend>
+                    
+                    <p>
+                        <label for="project-type">Project Category: <span aria-label="required">*</span></label><br>
+                        <select id="project-type" name="project-type" required aria-describedby="project-type-error">
+                            <option value="">-- Please select a category --</option>
+                            <optgroup label="Web Development">
+                                <option value="frontend">Frontend Development</option>
+                                <option value="backend">Backend Development</option>
+                                <option value="fullstack">Full Stack Development</option>
+                            </optgroup>
+                            <optgroup label="Design Services">
+                                <option value="ui-design">UI Design</option>
+                                <option value="ux-design">UX Design</option>
+                                <option value="branding">Branding</option>
+                            </optgroup>
+                            <optgroup label="Consulting">
+                                <option value="code-review">Code Review</option>
+                                <option value="architecture">System Architecture</option>
+                                <option value="mentoring">Mentoring</option>
+                            </optgroup>
+                        </select>
+                        <span id="project-type-error" role="alert" aria-live="polite"></span>
+                    </p>
+                    
+                    <p>
+                        <label for="budget">Budget Range (USD):</label><br>
+                        <input type="number" id="budget" name="budget" min="1000" max="100000" step="500"
+                               title="Budget range between $1,000 and $100,000"
+                               aria-describedby="budget-help">
+                        <span id="budget-help">Project budgets typically range from $5,000 for small applications to $100,000+ for enterprise solutions</span>
+                    </p>
+                    
+                    <p>
+                        <label for="timeline">Preferred Start Date:</label><br>
+                        <input type="date" id="timeline" name="timeline" 
+                               min="2024-01-01" max="2025-12-31"
+                               title="Please select a date between 2024 and 2025">
+                    </p>
+                    
+                    <p>
+                        <label for="message">Project Description: <span aria-label="required">*</span></label><br>
+                        <textarea id="message" name="message" rows="6" cols="50" required 
+                                  minlength="50" maxlength="1000"
+                                  placeholder="Please describe your project objectives, target audience, key features, technical requirements, timeline constraints, and any existing systems that need integration. The more detail you provide, the better I can understand your needs and provide relevant recommendations."
+                                  title="Please provide a detailed description (50-1000 characters)"
+                                  aria-describedby="message-error message-count"></textarea>
+                        <span id="message-count">0/1000 characters</span>
+                        <span id="message-error" role="alert" aria-live="polite"></span>
+                    </p>
+                    
+                    <p>
+                        <label for="files">Project Files (Optional):</label><br>
+                        <input type="file" id="files" name="files" multiple 
+                               accept=".pdf,.doc,.docx,.txt,.jpg,.png,.zip"
+                               title="Upload relevant project files (PDF, DOC, images, ZIP)"
+                               aria-describedby="files-help">
+                        <span id="files-help">Upload project specifications, wireframes, existing documentation, or reference materials. Accepted formats: PDF, DOC, DOCX, TXT, JPG, PNG, ZIP (maximum 5MB per file)</span>
+                    </p>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    
+                    <p>
+                        <label for="company">Company/Organization:</label><br>
+                        <input type="text" id="company" name="company" list="company-suggestions"
+                               maxlength="100"
+                               title="Company name (2-100 characters)">
+                        <datalist id="company-suggestions">
+                            <option value="Startup">
+                            <option value="Small Business">
+                            <option value="Enterprise">
+                            <option value="Non-profit">
+                            <option value="Personal Project">
+                        </datalist>
+                    </p>
+                    
+                    <p>
+                        <label for="referral">How did you hear about me?</label><br>
+                        <input type="text" id="referral" name="referral" list="referral-sources"
+                               maxlength="100">
+                        <datalist id="referral-sources">
+                            <option value="Google Search">
+                            <option value="LinkedIn">
+                            <option value="GitHub">
+                            <option value="Referral from colleague">
+                            <option value="Portfolio website">
+                        </datalist>
+                    </p>
+                </fieldset>
+                
+                <details data-form-section="submission">
+                    <summary>Form Submission Progress</summary>
+                    <p>Form Completion: <progress id="form-progress" value="0" max="100" aria-describedby="progress-desc">0%</progress></p>
+                    <span id="progress-desc">Complete all required fields to reach 100%</span>
+                </details>
+                
+                <p>
+                    <input type="submit" value="Send Message" data-action="submit" aria-describedby="submit-help">
+                    <input type="reset" value="Clear Form" data-action="reset">
+                    <span id="submit-help">Please review all information for accuracy. I typically respond to project inquiries within 24 hours during business days.</span>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <p>&copy; 2024 RAHUL BASAK. All rights reserved.</p>
+    </footer>
+</body>
+</html>
